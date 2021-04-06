@@ -53,15 +53,15 @@ for (var i = 0; i < quizData.length; i++) {
 }
 
 console.log(chalk.bgBlue("\tHigh Scores"));
-console.table(highScores);
+console.table(highScore);
 
 
 // find the high score
 let maxScore = highScore[0].score;
 
-for (var i = 0; i < highScores.length; i++) {
-    if (highScores[i].score > maxScore) {
-        maxScore = highScores[i].score;
+for (var i = 0; i < highScore.length; i++) {
+    if (highScore[i].score > maxScore) {
+        maxScore = highScore[i].score;
     }
 }
 
